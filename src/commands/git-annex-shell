@@ -3,11 +3,10 @@
 use lib $ENV{GL_LIBDIR};
 use Gitolite::Easy;
 
-# This command requires unrestricted arguments, so instead of adding it to the
-# COMMANDS hash in the usual way, you need to add it like so:
-#   'git-annex-shell' => 'ua',
-# (i.e., the value for the key should be the string 'ua').
-#
+# This command requires unrestricted arguments, so add it to the ENABLE list
+# like this:
+#   'git-annex-shell ua',
+
 # This requires git-annex version 20111016 or newer. Older versions won't
 # be secure.
 
